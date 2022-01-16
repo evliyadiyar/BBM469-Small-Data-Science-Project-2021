@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+    <div>
+        <h2>
+            Please view the report before give any values for features. Some feature values represented with integers. And most of the answer of features
+            was 'No' and 'Yes'. They have represented with 0 and 1. 
+
+
+        </h2>
+
+
+    </div>
+
+
+    <div>
+        <form method="POST" >
+        
+            {% csrf_token  %}
+            <table>
+                {{ form.as_table }}
+            </table>
+            
+            <button type="submit"> Predict! </button>
+        </form> 
+    </div>
+       
+
+</body>
+</html>
